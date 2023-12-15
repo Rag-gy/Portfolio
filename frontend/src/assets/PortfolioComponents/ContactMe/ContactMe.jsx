@@ -81,11 +81,14 @@ export default function ContactMe(props) {
                 });
                 setBoolean(false);
             } else {
-                const res = await fetch(`http://localhost:5000/contact`, {
-                    method: "POST",
-                    body: JSON.stringify(data),
-                    headers: { "Content-Type": "application/json" },
-                });
+                const res = await fetch(
+                    `https://portfoliobackend-phia.onrender.com/contact`,
+                    {
+                        method: "POST",
+                        body: JSON.stringify(data),
+                        headers: { "Content-Type": "application/json" },
+                    }
+                );
                 if (res.status == 200) {
                     setBanner("Mail Sent Successfully !");
                     toast.success("Thank you for contacting Raghul !", {
