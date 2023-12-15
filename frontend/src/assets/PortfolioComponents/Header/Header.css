@@ -91,6 +91,7 @@
         color: white;
     }
     .header-hamburger-bars {
+        display: none;
         font-size: 30px;
         cursor: pointer;
         margin: 0px 10px;
@@ -98,6 +99,7 @@
     }
     .show-hamburger-options {
         left: 0;
+        display: none;
         opacity: 1;
     }
 }
