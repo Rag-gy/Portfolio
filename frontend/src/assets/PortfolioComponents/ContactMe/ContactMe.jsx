@@ -104,8 +104,8 @@ export default function ContactMe(props) {
                     setEmail("");
                     setMessage("");
                 } else {
-                    res = res.json();
-                    toast.warn(res.msg, {
+                    var resVal = res.json();
+                    toast.warn(resVal.msg, {
                         position: "top-right",
                         autoClose: 5000,
                         hideProgressBar: false,
